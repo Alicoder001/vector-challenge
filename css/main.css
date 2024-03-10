@@ -1,0 +1,259 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+
+.container {
+  max-width: 192rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 14rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+body {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 11.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 10rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 7.5rem;
+  line-height: 1.49;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 7rem;
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+p {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #707070;
+}
+
+.nav-list {
+  display: flex;
+  -moz-column-gap: 3.9rem;
+       column-gap: 3.9rem;
+}
+.nav-item {
+  position: relative;
+}
+.nav-item__accordion {
+  position: absolute;
+  top: 1.38rem;
+  right: -1.8rem;
+  width: 1.07rem;
+  height: 0.601rem;
+  display: none;
+}
+.nav-item__title {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.nav-item .show {
+  display: block !important;
+}
+.nav .active .nav-item__title {
+  color: #3c82f4;
+}
+
+.header {
+  padding-top: 4.65rem;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 2.4rem;
+       column-gap: 2.4rem;
+}
+.header-sign__btn {
+  color: #707070;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #707070;
+  background: transparent;
+}
+.header-sign__btn:hover {
+  cursor: pointer;
+}
+.header-sign .primary-btn {
+  width: 11.9rem;
+  padding: 1.2rem 0 1.3rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .container {
+  padding: 0;
+}
+.hero-title-gr {
+  margin-top: -4.1rem;
+  margin-bottom: 13.6rem;
+  background: linear-gradient(90deg, #fe6783 1.9%, #ffbf84 97.1%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.hero-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-info__title {
+  color: #fff;
+  max-width: 69.4rem;
+  margin-bottom: 5rem;
+}
+.hero-info__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2.6rem;
+  margin-bottom: 2.1rem;
+}
+.hero-info__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31.3rem;
+  font-size: 2rem;
+  padding: 2.3rem 0 2.4rem;
+}
+.hero-info__footer {
+  display: flex;
+  -moz-column-gap: 0.98rem;
+       column-gap: 0.98rem;
+  justify-content: center;
+}
+.hero-info__round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 2.86rem;
+  height: 2.86rem;
+  background-color: rgba(15, 198, 92, 0.24);
+}
+.hero-info__circle {
+  width: 1.71rem;
+  height: 1.71rem;
+  background-color: #0fc65c;
+  border-radius: 50%;
+}
+.hero-info__subt {
+  font-size: 2.5rem;
+  line-height: normal;
+  color: #707070;
+  font-weight: 400;
+}
+.hero-info__subt span {
+  font-weight: 700;
+  line-height: 1.52;
+  color: #fff;
+}
+
+.btn {
+  border-radius: 1.2rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c82f4;
+  color: #fff;
+  border-radius: 1.2rem;
+  border: none;
+}
+
+.outline-btn {
+  background: transparent;
+  color: #707070;
+  border: 1px solid #707070;
+}/*# sourceMappingURL=main.css.map */

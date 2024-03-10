@@ -1,0 +1,31 @@
+.nav {
+  &-list {
+    display: flex;
+    column-gap: 3.9rem;
+  }
+  &-item {
+    position: relative;
+    &__accordion {
+      position: absolute;
+      top: 1.38rem;
+      right: -1.8rem;
+      width: 1.07rem;
+      height: 0.601rem;
+      display: none;
+    }
+
+    &__title {
+      font-size: 2rem;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    .show {
+      display: block !important;
+    }
+  }
+  .active {
+    .nav-item__title {
+      color: $active-color;
+    }
+  }
+}
