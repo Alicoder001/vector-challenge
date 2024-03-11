@@ -248,7 +248,9 @@ p {
 }
 .nav-item:hover {
   cursor: pointer;
-  color: white;
+}
+.nav-item:hover .nav-item__title {
+  color: #fff;
 }
 .nav .active .nav-item__title {
   color: #3c82f4;
