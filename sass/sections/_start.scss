@@ -1,0 +1,26 @@
+.start {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 18.3rem;
+  img {
+    margin-bottom: 2rem;
+  }
+  &-subt {
+    font-size: 4.3rem;
+    line-height: 1.48;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+  }
+  &-btn {
+    padding: 2.9rem 0 2.8rem;
+    width: 47.2rem;
+    font-size: 3rem !important;
+    line-height: 1.5 !important;
+    font-weight: 600 !important;
+    margin-bottom: 2.6rem;
+  }
+  .subt {
+    font-size: 3.8rem !important;
+  }
+}
