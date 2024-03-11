@@ -1,9 +1,17 @@
 .header {
   padding-top: 4.65rem;
+  @include responsive(med-desktop) {
+    padding-top: 2.5rem;
+  }
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  &-logo__icon {
+    @include responsive(med-desktop) {
+      max-width: 12rem;
+    }
   }
   &-sign {
     display: flex;
@@ -17,14 +25,33 @@
       font-weight: 500;
       color: $subt-color;
       background: transparent;
+
       &:hover {
         cursor: pointer;
       }
     }
-
+    .login {
+      @include responsive(med-desktop) {
+        display: none;
+      }
+    }
     .primary-btn {
       width: 11.9rem;
       padding: 1.2rem 0 1.3rem;
+      @include responsive(phone) {
+        width: 8rem;
+        font-size: 1.8rem;
+      }
+      @include responsive(med-desktop) {
+        display: none;
+        padding: 0.8rem 0 0.8rem;
+      }
+    }
+  }
+  .hidden {
+    display: none !important;
+    @include responsive(med-desktop) {
+      display: block !important;
     }
   }
 }

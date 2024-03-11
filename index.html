@@ -12,6 +12,54 @@
 
     <header class="header">
       <div class="container">
+        <div class="sidebar">
+          <div class="sidebar-icon toggle">
+            <div class="sidebar-icon__item"></div>
+            <div class="sidebar-icon__item"></div>
+            <div class="sidebar-icon__item"></div>
+          </div>
+          <ul class="sidebar-list sidebar-hidden">
+            <img
+              class="sidebar-list__x toggle-x"
+              src="./images/x.png"
+              width="40"
+              height="40"
+              alt=""
+            />
+            <li class="sidebar-item">
+              <p class="sidebar-item__title">Use Cases</p>
+              <img
+                class="sidebar-item__accordion show"
+                src="./images/accordion.svg"
+                alt="accordion"
+              />
+            </li>
+            <li class="sidebar-item">
+              <p class="sidebar-item__title">About</p>
+              <img
+                class="sidebar-item__accordion"
+                src="./images/accordion.svg"
+                alt="accordion"
+              />
+            </li>
+            <li class="sidebar-item active">
+              <p class="sidebar-item__title">Pricing</p>
+              <img
+                class="sidebar-item__accordion"
+                src="./images/accordion.svg"
+                alt="accordion"
+              />
+            </li>
+            <li class="sidebar-item">
+              <p class="sidebar-item__title">Blog</p>
+              <img
+                class="sidebar-item__accordion"
+                src="./images/accordion.svg"
+                alt="accordion"
+              />
+            </li>
+          </ul>
+        </div>
         <div class="header-logo">
           <img
             class="header-logo__icon"
@@ -56,10 +104,12 @@
             </li>
           </ul>
         </nav>
+
         <!-- sign -->
         <div class="header-sign">
           <p class="header-sign__btn login">Login</p>
           <button class="header-sign__btn primary-btn">Sign Up</button>
+          <button class="header-sign__btn primary-btn hidden">Sign In</button>
         </div>
       </div>
     </header>
@@ -150,7 +200,7 @@
           <!-- step-1 -->
           <div class="step step-1">
             <p class="step-name">STEP 1</p>
-            <h4 class="step-tile">Connect Your Content</h4>
+            <h4 class="step-title">Connect Your Content</h4>
             <p class="step-subt">
               Bring all of your content together and get a Homepage that
               automatically updates whenever you create anywhere online.
@@ -213,7 +263,7 @@
               <div class="page-wrapper item-1">
                 <a href="" class="page-link">One Link</a>
                 <h3 class="page-title">ALL You Create.</h3>
-                <h3 class="page-title__secondary">One Link</h3>
+                <h3 class="page-title__secondary page-title">One Link</h3>
                 <div class="phone">
                   <div class="phone-display">
                     <div class="phone-display__header">
@@ -243,7 +293,7 @@
                   Emails. <br />
                   Phone #s..
                   <br />
-                  <span class="page-title__secondary">All Yours.</span>
+                  <h3 class="page-title__secondary page-title">All Yours.</h3>
                 </h3>
               </div>
             </div>
@@ -397,4 +447,5 @@
     </footer>
     <!-- /FOOTER -->
   </body>
+  <script src="./app.js"></script>
 </html>

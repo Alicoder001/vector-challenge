@@ -18,31 +18,88 @@ h1 {
   font-size: 11.2rem;
   line-height: 1.5;
   font-weight: 700;
+  @include responsive(max-desktop) {
+    font-size: 8rem;
+  }
+  @include responsive(med-desktop) {
+    font-size: 6rem;
+  }
+  @include responsive(max-tablet) {
+    font-size: 5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 4rem;
+  }
+  @include responsive(max-phone) {
+    font-size: 3rem;
+  }
+  @include responsive(phone) {
+    font-size: 2.5rem;
+  }
 }
 h2 {
   font-size: 10rem;
   line-height: 1.5;
   font-weight: 700;
+  @include responsive(desktop) {
+    font-size: 8rem;
+  }
+  @include responsive(max-tablet) {
+    font-size: 4rem;
+  }
+  @include responsive(min-tablet) {
+    font-size: 3rem;
+  }
+  @include responsive(phone) {
+    font-size: 2rem;
+  }
 }
 h3 {
   font-size: 8rem;
   line-height: 1.2;
   font-weight: 600;
+  @include responsive(desktop) {
+    font-size: 5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 3.5rem;
+  }
 }
 h4 {
   font-size: 7.5rem;
   line-height: 1.49;
   font-weight: 600;
+  @include responsive(desktop) {
+    font-size: 6rem;
+  }
+  @include responsive(tablet) {
+    font-size: 3.5rem;
+  }
 }
 h5 {
   font-size: 7rem;
   line-height: 1.05;
   font-weight: 600;
+  @include responsive(desktop) {
+    font-size: 5rem;
+  }
+  @include responsive(tablet) {
+    font-size: 4rem;
+  }
+  @include responsive(tablet) {
+    font-size: 3rem;
+  }
 }
 h6 {
   font-size: 4rem;
   line-height: 1.5;
   font-weight: 500;
+  @include responsive(desktop) {
+    font-size: 3rem;
+  }
+  @include responsive(tablet) {
+    font-size: 2.5rem;
+  }
 }
 p {
   font-size: 3rem;

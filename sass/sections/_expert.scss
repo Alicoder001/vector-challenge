@@ -1,5 +1,8 @@
 .expert {
   margin-bottom: 18.8rem;
+  @include responsive(tablet) {
+    margin-bottom: 10rem;
+  }
   &-title {
     margin-bottom: 5.2rem;
   }
@@ -8,6 +11,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 18.8rem;
+    @include responsive(desktop) {
+      margin-bottom: 8rem;
+    }
   }
   img {
     max-width: 100%;
@@ -26,6 +32,12 @@
     &__title {
       max-width: 123.6rem;
       width: 100%;
+      @include responsive(desktop) {
+        margin: 0 5rem;
+      }
+    }
+    @include responsive(desktop) {
+      height: 30rem;
     }
   }
 }
