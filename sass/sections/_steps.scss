@@ -335,9 +335,18 @@
     font-weight: 700;
     line-height: 1.33;
     margin-bottom: 7.7rem;
+
     @include responsive(max-desktop) {
-      margin-bottom: 4.27rem;
-      margin-left: 4.27rem;
+      margin-bottom: 4.27em;
+      margin-left: 2em;
+    }
+    @include responsive(min-desktop) {
+      margin-bottom: 4.27em;
+      margin-left: 4.27em;
+    }
+    @include responsive(min-tablet) {
+      margin-bottom: 2em;
+      margin-left: -15em;
     }
   }
   &-wrapper {

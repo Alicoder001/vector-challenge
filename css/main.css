@@ -967,8 +967,20 @@ p {
 }
 @media screen and (max-width: 1600px) {
   .phone-clock {
-    margin-bottom: 4.27rem;
-    margin-left: 4.27rem;
+    margin-bottom: 4.27em;
+    margin-left: 2em;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .phone-clock {
+    margin-bottom: 4.27em;
+    margin-left: 4.27em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .phone-clock {
+    margin-bottom: 2em;
+    margin-left: -15em;
   }
 }
 .phone-wrapper {
